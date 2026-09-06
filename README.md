@@ -1,4 +1,4 @@
-# 🛡️ CyberShield — Automated Cybersecurity Log Analyzer
+# CyberShield — Automated Cybersecurity Log Analyzer
 
 CyberShield is a desktop security tool that analyzes system/authentication logs and automatically flags suspicious activity — brute-force attacks, credential stuffing, suspicious IPs, unauthorized access, and off-hours logins — through a live Tkinter dashboard with Matplotlib visualizations.
 
@@ -6,14 +6,14 @@ Built to demonstrate practical, defensive security engineering: log parsing, rul
 
 ---
 
-## ✨ Features
+## Features
 
 - **Multi-format log ingestion** — structured CSV logs or raw syslog-style text (parsed via regex)
 - **Rule-based detection engine**
-  - 🔓 Brute-force attack detection (rolling time-window analysis)
-  - 🧩 Credential stuffing detection (many usernames from one IP)
-  - 🚨 Unauthorized access detection (success immediately after a failure burst)
-  - 🌙 Off-hours login flagging
+  - Brute-force attack detection (rolling time-window analysis)
+  - Credential stuffing detection (many usernames from one IP)
+  - Unauthorized access detection (success immediately after a failure burst)
+  - Off-hours login flagging
 - **Severity scoring** — Critical / High / Medium / Low
 - **Live dashboard (Tkinter)** — summary cards, sortable findings table, dark SOC-style theme
 - **Visual analytics (Matplotlib)** — severity breakdown, top offending IPs, login outcome ratio
@@ -21,7 +21,7 @@ Built to demonstrate practical, defensive security engineering: log parsing, rul
 
 ---
 
-## 🧰 Tech Stack
+## Tech Stack
 
 | Layer               | Technology                          |
 |---------------------|--------------------------------------|
@@ -35,7 +35,7 @@ Built to demonstrate practical, defensive security engineering: log parsing, rul
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 CyberShield/
@@ -54,7 +54,7 @@ CyberShield/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### 1. Clone the repo
 ```bash
@@ -81,13 +81,13 @@ python3 dashboard.py
 ```
 
 ### 5. Use it
-1. Click **📂 Load Log File** → select `data/auth_log.csv` (or your own CSV/log file)
-2. Click **⚙️ Run Analysis** → findings table + charts populate instantly
-3. Click **📄 Export Report** → saves a timestamped CSV + summary `.txt` to `reports/`
+1. Click **Load Log File** → select `data/auth_log.csv` (or your own CSV/log file)
+2. Click **Run Analysis** → findings table + charts populate instantly
+3. Click **Export Report** → saves a timestamped CSV + summary `.txt` to `reports/`
 
 ---
 
-## 🔍 Detection Logic (How It Works)
+## Detection Logic (How It Works)
 
 | Detection Rule | Logic |
 |---|---|
@@ -100,7 +100,7 @@ Thresholds are configurable in `log_analyzer.py` via the `Thresholds` class — 
 
 ---
 
-## 📊 Custom Log Format
+## Custom Log Format
 
 If you're pointing this at your own **CSV** logs, use this schema:
 
@@ -114,7 +114,7 @@ For **raw syslog-style** text logs (e.g. SSH auth logs), the regex parser in `lo
 
 ---
 
-## 🗺️ Possible Extensions
+## Possible Extensions
 
 - GeoIP lookup on offending IPs (flag logins from unexpected countries)
 - Cross-reference IPs against threat-intel feeds (AbuseIPDB, VirusTotal API)
@@ -124,12 +124,12 @@ For **raw syslog-style** text logs (e.g. SSH auth logs), the regex parser in `lo
 
 ---
 
-## 📄 License
+## License
 
 MIT License — see [LICENSE](LICENSE) for details.
 
 ---
 
-## 👤 Author
+## Author
 
 Built as a cybersecurity portfolio project demonstrating log analysis, threat detection logic, and security tooling development in Python.
