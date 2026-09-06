@@ -122,11 +122,7 @@ For **raw syslog-style** text logs (e.g. SSH auth logs), the regex parser in `lo
 - Real-time log tailing (watch a live log file instead of static upload)
 - SQLite backend for historical trend analysis across multiple audits
 
----
 
-## License
-
-MIT License — see [LICENSE](LICENSE) for details.
 
 ---
 
